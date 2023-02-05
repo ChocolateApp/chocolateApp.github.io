@@ -14,13 +14,13 @@ body {
 
 .titleDiv {
     text-align: center;
-    margin-top: 160px;
+    margin-top: 9%;
     font-size: 1.5em;
 }
 
 .lightBubble {
-    width: 1200px;
-    height: 1200px;
+    width: 60%;
+    aspect-ratio: 1;
     background: #745BD6;
     filter: blur(200px);
     border-radius: 100%;
@@ -29,46 +29,46 @@ body {
 }
 
 .imagePres {
-    width: 1000px;
+    width: 52%;
 }
 
 .firstImage {
     transform: rotate3d(-6, 34, 6, 36deg);
-    margin-top: 130px;
+    margin-top: 7%;
 }
 
 .lightBubble1 {
-    top: -600px;
-    left: -600px;
+    top: -30%;
+    left: -30%;
 }
 
 .lightBubble2 {
-    top: 400px;
-    right: -600px;
+    top: 30%;
+    right: -30%;
 }
 
 .lightBubble3 {
-    top: 1200px;
-    left: -600px;
+    top: 100%;
+    left: -30%;
 }
 
 .lightBubble4 {
-    top: 1600px;
-    right: -600px;
+    top: 90%;
+    right: -30%;
 }
 
 .atout1,
 .atout3 {
     position: absolute;
-    right: 50px;
-    width: 800px;
+    right: 3%;
+    width: 40%;
     margin-top: 0 !important;
 }
 
 .atout2 {
     position: absolute;
-    left: 50px;
-    width: 800px !important;
+    left: 3%;
+    width: 40%;
 }
 
 .homemenuImage {
@@ -87,12 +87,12 @@ body {
 }
 
 .firstSection {
-    padding-bottom: 35px;
+    padding-bottom: 2%;
 }
 
 .secondSection,
 .thirdSection {
-    margin-top: 400px;
+    margin-top: 21%;
 }
 
 .finalSection {
@@ -100,10 +100,11 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 2% 0;
     background: #1d1d1d73;
-    padding: 100px 20px;
+    padding: 9% 1%;
     backdrop-filter: blur(100px);
+    align-items: center;
 }
 
 .textDownload,
@@ -115,21 +116,20 @@ body {
 footer {
     background: #0d0d0d;
     text-align: center;
-    height: 200px;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     align-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
     box-shadow: -7px -10px 20px 20px #0d0d0d;
 }
 
 .leftFooter,
 .centerFooter,
 .rightFooter {
-    width: 400px;
+    width: 22%;
     display: flex;
     flex-direction: column;
 }
@@ -138,7 +138,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 5%;
 }
 
 .leftFooter img {
@@ -186,4 +186,44 @@ footer {
 
  ::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .titleDiv {
+        font-size: 1em;
+    }
+    p,
+    a,
+    h2 {
+        font-size: 0.5em;
+    }
+    .secondSection,
+    .thirdSection {
+        margin-top: 30%;
+    }
+    .homemenuImage {
+        margin-top: 0;
+    }
+    .lightBubble {
+        filter: blur(80px);
+    }
+    .lightBubble1 {
+        top: -7%;
+        left: -15%;
+    }
+    .lightBubble2 {
+        top: 20%;
+        right: 0%;
+    }
+    .lightBubble3 {
+        top: 40%;
+        left: -30%;
+    }
+    .lightBubble4 {
+        top: 70%;
+        right: 0%;
+    }
+    footer {
+        height: 165px;
+    }
 }
