@@ -1,2 +1,2 @@
-# chocolateApp.github.io
-The Chocolate Website
+# ChocolateApp
+The website for the ChocolateApp project.
